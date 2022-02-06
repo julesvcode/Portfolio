@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Vier - Front-end developer</title>
+
+    <!-- Standard SEO -->
+	<meta name="description" content="I'm a digital marketer turned front-end developer (self taught). Check out my work and projects." />
+	<meta name="keywords" content="Julien Vier, front-end developer, html, css, javascript, react, web developer, wordpress, London, United Kingdom " />
+	<link rel="canonical" href="https://julienvier.co" />
+
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="img/laptop-favicon.png" rel="shortcut icon" type="image/png"/>
+
+    <!-- SOCIAL ICONS-->
+    <link href="./fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Facebook OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en_gb" />
+	<meta property="og:url" content="https://julienvier.co" />
+	<meta property="og:title" content="Julien Vier - Front-end developer based in the UK" />
+	<meta property="og:description" content="I'm a digital marketer turned front-end developer (self taught). Check out my work and projects." />
+	<meta property="og:image" content="https://julienvier.co/img/og-banner.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:site_name" content="Julien Vier - Front-end developer based in the UK" />
+	<meta property="og:see_also" content="https://twitter.com/julesvcode" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Julien Vier - Front-end developer based in the UK" />
+	<meta name="twitter:description" content="I'm a digital marketer turned front-end developer (self taught). Check out my work and projects." />
+	<meta name="twitter:image" content="https://julienvier.co/img/og-banner.jpg" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110543167-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110543167-1');
+    </script>
+    
+<body>
+     <header>
+         <div class="logo-container">
+            <i class="fas fa-laptop-code"></i>
+            <h1>Julien Vier</h1>
+         </div>
+         <nav>
+             <ul class="nav-links">
+                 <li><button class="nav-link homelinks" onclick="scrollFunctionWork()" href="#">WORK</button></li>
+                 <li><button class="nav-link homelinks" onclick="scrollFunctionProjects()" href="#">PROJECTS</button></li>
+                 <li><button class="nav-link homelinks" onclick="scrollFunctionAbout()" href="#">ABOUT</button></li>
+             </ul>
+         </nav>
+     </header>
+
+     <main>
+         <section class="presentation">
+             <div class="introduction">
+                <h1 class="title">Hey, I’m Julien 👋🏻</h1> 
+                <div class="intro-text">
+                    <p>
+                        I'm a digital marketer turned front-end developer 👨🏻‍💻 Self taught.<br><br>
+                        Check out my <a href="#work-anchor" class="homelinks">work</a> and <a href="#projects-anchor" class="homelinks">projects</a>, and if you like what you see get in touch:</p>
+                </div>
+                <div class="cta">
+                    <ul class="header-icons">
+                        <li><a class="header-icon" href="https://twitter.com/julesvcode" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="header-icon" href="https://www.linkedin.com/in/julienvier/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="header-icon" href="https://github.com/julesvcode" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="header-icon" href="https://dribbble.com/julienvier" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a class="header-icon btn" href="mailto:vier.julien@gmail.com">EMAIL ME</a></li>
+                    </ul>
+                </div>
+             </div>
+             <div class="cover">
+                 <img src="./img/avatar.png" alt="avatar">
+             </div>    
+         </section>
+         <section class="work" id="work-anchor">
+             <div class="header-work">
+                <i class="far fa-folder-open"></i>
+                <h1 class="title"> /WORK</h1>
+             </div>
+             <div class="work-items">
+                <div class="work-item">
+                    <i class="far fa-window-maximize fa-5x"></i>
+                    <div class="work-title">
+                        B. Barrett
+                    </div>
+                    <div class="work-description">
+                        Coaching Website
+                    </div>
+                    <div class="work-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span><span class="tags tag-js">JavaScript</span>
+                    </div>
+                    <div class="work-view">
+                        <a href="http://bernadettebarrett.com/" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <i class="far fa-window-maximize fa-5x"></i>
+                    <div class="work-title">
+                        Lord Apex
+                    </div>
+                    <div class="work-description">
+                        Artist Website
+                    </div>
+                    <div class="work-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span><span class="tags tag-js">JavaScript</span>
+                    </div>
+                    <div class="work-view">
+                        <a href="http://lordapex.com/" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <i class="far fa-window-maximize fa-5x"></i>
+                    <div class="work-title">
+                        Preditah
+                    </div>
+                    <div class="work-description">
+                        Artist Website
+                    </div>
+                    <div class="work-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span><span class="tags tag-js">JavaScript</span>
+                    </div>
+                    <div class="work-view">
+                        <a href="#" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <i class="far fa-window-maximize fa-5x"></i>
+                    <div class="work-title">
+                        Iwona Dybiak
+                    </div>
+                    <div class="work-description">
+                        Stylist Portfolio
+                    </div>
+                    <div class="work-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span>
+                    </div>
+                    <div class="work-view">
+                        <a href="#" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="projects" id="projects-anchor">
+            <div class="header-projects">
+                <i class="far fa-folder-open"></i>
+               <h1 class="title"> /PROJECTS</h1>
+            </div>
+            <div class="project-items">
+                <div class="project-item project-progress">
+                    <i class="far fa-file-code fa-5x"></i>
+                    <div class="project-title">
+                        What To Listen To
+                    </div>
+                    <div class="project-description">
+                        Work in progress
+                    </div>
+                    <div class="project-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span><span class="tags tag-js">JS</span><span class="tags tag-react">React</span>
+                    </div>
+                    <div class="project-view">
+                        <i class="fas fa-battery-quarter fa-2x"></i>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <i class="far fa-file-code fa-5x"></i>
+                    <div class="project-title">
+                        Social Minimal
+                    </div>
+                    <div class="project-description">
+                        HTML Template
+                    </div>
+                    <div class="project-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span>
+                    </div>
+                    <div class="project-view">
+                        <a href="#" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <i class="far fa-file-code fa-5x"></i>
+                    <div class="project-title">
+                        LBLD
+                    </div>
+                    <div class="project-description">
+                        Playlist service
+                    </div>
+                    <div class="project-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span>
+                    </div>
+                    <div class="project-view">
+                        <a href="#" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <i class="far fa-file-code fa-5x"></i>
+                    <div class="project-title">
+                        Social Stage
+                    </div>
+                    <div class="project-description">
+                        Social media dashboard
+                    </div>
+                    <div class="project-tags">
+                        <span class="tags tag-html">HTML</span><span class="tags tag-css">CSS</span>
+                    </div>
+                    <div class="project-view">
+                        <a href="#" class="work-view-link" target="_blank">
+                            Preview <i class="fas fa-external-link-alt fa-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>      
+        </section>
+        <section class="about" id="about-anchor">
+            <div class="header-about">
+                <i class="far fa-folder-open"></i>
+               <h1 class="title"> /ABOUT ME</h1>
+            </div>
+            <div class="about-cv">
+                <h2>CV:</h2>
+                <button class="cv btn">DOWNLOAD MY CV</button>
+            </div>
+            <div class="about-skills">
+                <h2>SKILLS:</h2>
+                <ul class="skills">
+                    <li class="skill"><i class="fab fa-html5"></i></li>
+                    <li class="skill"><i class="fab fa-css3-alt"></i></li>
+                    <li class="skill"><i class="fab fa-js"></i></li>
+                    <li class="skill"><i class="fab fa-figma"></i></li>
+                    <!-- <li class="skill"><i class="fab fa-react"></i></li> -->
+                </ul>
+            </div>
+            <div class="about-contact">
+                <h2>CONTACT ME:</h2>
+                <ul class="header-icons">
+                    <li><a class="header-icon" href="https://twitter.com/julesvcode" target="_blank"><i class="social fab fa-twitter"></i></a></li>
+                    <li><a class="header-icon" href="https://www.linkedin.com/in/julienvier/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a class="header-icon" href="https://github.com/julesvcode" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a class="header-icon" href="https://dribbble.com/julienvier" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="header-icon" href="mailto:vier.julien@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </section>
+     </main>
+     <footer>
+         <div class="footer">
+             <p>&copy; <script>document.write(new Date().getFullYear())</script> - Julien Vier</p>
+         </div>
+     </footer>
+
+     <script src="./main.js"></script>
+</body>
+</html>

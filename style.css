@@ -1,0 +1,571 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body {
+    font-family: 'Space Mono', Courier, monospace;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: 1em auto;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto 1em auto;
+    align-items: center;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.logo-container, .nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 6;
+}
+
+.fas {
+    font-size: 26px;
+    padding: 0.4em 0.4em 0 0;
+}
+
+nav {
+    flex: 6;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+.homelinks {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+.homelinks:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    font-weight: bold;
+}
+
+/* SECTION 1 */
+.presentation {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cover {
+    flex: 1;
+    text-align: right;
+}
+
+.cover img {
+    height: 60vh;
+    border-radius: 7px;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+    animation: leftmove 1.5s ease;
+}
+
+/* SOCIAL ICONS */
+.header-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2em auto;
+    list-style: none;
+}
+
+.header-icons li {
+    margin: 0 0.25em 0 0;
+    animation: rightmove 2s ease;
+    font-size: 1.75em;
+    color: #333333;
+    height: 2.5em;
+}
+
+.header-icon {
+    padding: 0.15em 0.5em;
+    border: 4px solid #333333;
+    border-radius: 5px;
+    color: #333333;
+}
+
+.header-icon:hover {
+    color: #ffffff;
+    background-color: #333333;
+    transition: 0.3s ease-in;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #333333;
+    font-weight: 500;
+    border: 4px solid #333333;
+    padding: 0.15em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 0.5em;
+    transition: 0.3s ease-in;
+}
+
+.btn:hover {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.work, .projects, .about {
+    padding-top: 6em;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+}
+
+.header-work, .header-projects, .header-about {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.far, .fab {
+    font-size: 1em;
+}
+
+.fa-folder-open {
+    font-size: 2em;
+}
+
+/* WORK SECTION */
+
+.work-items {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    text-align: center;
+    flex: 1;
+}
+
+.work-title {
+    font-size: 1.25em;
+    padding-top: 0.5em;
+}
+
+.work-description {
+    font-size: 1em;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.work-tags {
+    padding: 1em 0;
+    font-size: 0.75em;
+}
+
+.tags {
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.25em 0.75em;
+    margin: 0 0.25em;
+}
+
+.tag-html {
+    background-color: #f06529;
+}
+
+.tag-css {
+    background-color: #2965f1;
+}
+
+.tag-js {
+    background-color: #f0db4f;
+}
+
+.tag-react {
+    background-color: #61DBFB;
+}
+.work-view {
+    padding: 0.75em 0;
+}
+.work-view-link {
+    color: #ffffff;
+    font-size: 1em;
+    background-color: #333333;
+    font-weight: 500;
+    border: 4px solid #333333;
+    padding: 0.25em 0.75em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+.work-view-link:hover {
+    color: #333333;
+    background-color: transparent;
+}
+
+/* PROJECTS SECTION */
+
+.project-items {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    text-align: center;
+    flex: 1;
+}
+
+.project-title {
+    font-size: 1.25em;
+    padding-top: 0.5em;
+}
+
+.project-description {
+    font-size: 1em;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.project-tags {
+    padding: 1em 0;
+    font-size: 0.75em;
+}
+
+.project-view {
+    padding: 0.75em 0;
+}
+.project-view-link {
+    color: #ffffff;
+    font-size: 1em;
+    background-color: #333333;
+    font-weight: 500;
+    border: 4px solid #333333;
+    padding: 0.25em 0.75em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+.project-view-link:hover {
+    color: #333333;
+    background-color: transparent;
+}
+
+.project-progress {
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.fa-battery-quarter {
+    padding: 0;
+}
+
+
+/* ABOUT SECTION */
+
+.about-cv, .about-skills, .about-contact {
+    margin: 3em 0;
+}
+
+.about-cv {
+    display: none;
+}
+
+.cv {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    font-family: 'Space Mono', Courier, monospace;
+}
+
+.skills {
+    display: flex;
+    font-size: 3em;
+    color: #333333;
+}
+
+.skill {
+    margin: 0.35em 0.35em;
+    position: relative;
+    transition: 1s ease-in;
+}
+
+.skill:hover {
+    animation: liftup 1.5s ease;
+}
+
+/* FOOTER */
+
+footer {
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+/* CSS ANIMATIONS */
+
+@keyframes leftmove {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightmove {
+    0% {
+        opacity: 0;
+        /* transform: translateX(-20px); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateX(0px); */
+    }
+}
+
+@keyframes liftup {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -0.25em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 2em 1em;
+    }
+
+    nav, .cover {
+        display: none;
+    }
+    header {
+        width: 90%;
+    }
+
+    .presentation {
+        flex-direction: column;
+        padding: 4em 0 1em;
+        width: 90%;
+        min-height: 75vh;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .intro-text p {
+        font-size: 1em;
+    }
+
+    .header-icons {
+        flex-wrap: wrap;
+    }
+
+    .header-icons li {
+        font-size: 1.25em;
+        height: 2.5em;
+    }
+
+    .work, .projects, .about {
+        width: 100%;
+        padding-top: 1em;
+        min-height: 100vh;
+    }
+
+    /* WORK SECTION */
+
+    .header-work {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .work-items {
+        flex-wrap: wrap;
+        font-size: 0.65em;
+        padding: 2em 0 4em;
+        height: 70vh;
+    }
+
+    .work-item {
+        padding: 0 0.5em;
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+
+    /* PROJECTS SECTION */
+
+    .header-projects {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-items {
+        padding: 2em 0 4em;
+        height: 70vh;
+        font-size: 0.65em;
+    }
+
+    .project-item {
+        padding: 0 0.5em;
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    nav {
+        display: none;
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduction {
+        flex: 1;
+        padding: 4em 0 2em;
+    }
+
+    .intro-text {
+        padding-top: 2em;
+    }
+
+    .header-icons {
+        padding-top: 1em;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .intro-text p {
+        font-size: 1.5em;
+    }
+
+    .cover {
+        flex: 5;
+    }
+
+    .cover img {
+        height: 35vh;
+        border-radius: 7px;
+        box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+        animation: leftmove 1.5s ease;
+    }
+
+    /* WORK SECTION */
+
+    h2 {
+        font-size: 2em;
+    }
+    .header-work {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .work-items {
+        font-size: 1.25em;
+        padding: 2em 0 4em;
+        height: 70vh;
+    }
+
+    .work-item {
+        padding: 0 0.5em;
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+
+    /* PROJECTS SECTION */
+
+    .header-projects {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-items {
+        padding: 2em 0 4em;
+        height: 70vh;
+        font-size: 1.25em;
+    }
+
+    .project-item {
+        padding: 0 0.5em;
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+
+    /* ABOUT SECTION */
+
+    .about {
+        text-align: center;
+    }
+
+    .about-skills {
+        padding-top: 2em;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+}
